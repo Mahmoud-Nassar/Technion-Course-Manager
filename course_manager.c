@@ -181,8 +181,9 @@ static void courseManagerStudentAddFriend(CourseManager courseManager,
 static CourseManagerResult courseManagerHandelFriendRequestErrors(CourseManager
                                 courseManager,Student sender){
     assert(courseManager!=NULL);
-    if (!courseManager->current) return COURSE_MANAGER_STUDENT_NOT_LOGGED_IN;
-
+    if (!courseManager->current){
+		return COURSE_MANAGER_STUDENT_NOT_LOGGED_IN;
+	}
     if (sender == NULL) return COURSE_MANAGER_STUDENT_DOES_NOT_EXIST;
     if (courseManagerCheckIfFriends(courseManager,courseManager->current
             ,sender)) {
@@ -279,7 +280,9 @@ CourseManagerResult createCourseManager(CourseManager* courseManager_ptr){
     assert(courseManager_ptr!=NULL);
     CourseManager allocate_course_manager=malloc(sizeof(
                                                  *allocate_course_manager));
-    if (!allocate_course_manager) return COURSE_MANAGER_OUT_OF_MEMORY;
+    if (!allocate_course_manager) {
+		return COURSE_MANAGER_OUT_OF_MEMORY;
+	}
     allocate_course_manager->current=NULL;
     allocate_course_manager->students=NULL;
     allocate_course_manager->requests=NULL;
