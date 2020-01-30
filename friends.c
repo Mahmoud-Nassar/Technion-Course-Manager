@@ -1,9 +1,4 @@
-/*
- * Friends.c
- *
- *  Created on: Dec 19, 2017
- *      Author: Reham
- */
+
 #include <stdio.h>
 #include <malloc.h>
 #include <assert.h>
@@ -17,6 +12,7 @@
 struct friends_t{
 	Student student;
 	Set student_friends;
+	
 };
 
 /*******************static functions*******************************************/
