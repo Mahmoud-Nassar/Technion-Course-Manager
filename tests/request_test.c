@@ -7,17 +7,17 @@
 
 static Student initStudent1(){
     Student student1;
-    StudentResult studentResult=createStudent(&student1,11111111,"omar",
+    StudentResult studentResult= createStudent(&student1,11111111,"omar",
                                               "cohen");
-    ASSERT_TEST(studentResult==STUDENT_SUCCESS);
+    ASSERT_TEST(studentResult == STUDENT_SUCCESS);
     return student1;
 }
 
 static Student initStudent2(){
     Student student1;
-    StudentResult studentResult=createStudent(&student1,22222222,"mahmoud",
+    StudentResult studentResult= createStudent(&student1,22222222,"mahmoud",
                                               "nassar");
-    ASSERT_TEST(studentResult==STUDENT_SUCCESS);
+    ASSERT_TEST(studentResult == STUDENT_SUCCESS);
     return student1;
 }
 

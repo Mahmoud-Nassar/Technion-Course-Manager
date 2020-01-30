@@ -9,11 +9,11 @@
 #include <malloc.h>
 
 static bool testCreateStudent(){
-    StudentResult studentResult=createStudent(NULL,11111111,"omar","nassar");
+    StudentResult studentResult= createStudent(NULL,11111111,"omar","nassar");
     ASSERT_TEST(studentResult == STUDENT_INVALID_PARAMETERS);
-    Student student1=NULL;
-    char *first_name=NULL;
-    char *last_name=NULL;
+    Student student1= NULL;
+    char *first_name= NULL;
+    char *last_name= NULL;
     studentResult=createStudent(&student1,11111111,first_name,"nassar");
     ASSERT_TEST(studentResult == STUDENT_INVALID_PARAMETERS );
     first_name="omar";
