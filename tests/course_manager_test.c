@@ -8,14 +8,14 @@
 
 static bool testCreateCourseManager(){
     CourseManager courseManager;
-    CourseManagerResult courseManagerResult=createCourseManager(&courseManager);
-    ASSERT_TEST(courseManagerResult==COURSE_MANAGER_SUCCESS);
+    CourseManagerResult courseManagerResult= createCourseManager(&courseManager);
+    ASSERT_TEST(courseManagerResult == COURSE_MANAGER_SUCCESS);
      courseManagerResult=courseManagerSendFriendRequest
             (courseManager,231455);
-    ASSERT_TEST(courseManagerResult==COURSE_MANAGER_STUDENT_NOT_LOGGED_IN);
+    ASSERT_TEST(courseManagerResult == COURSE_MANAGER_STUDENT_NOT_LOGGED_IN);
     courseManagerResult=courseManagerHandelFriendRequest(courseManager,
                                                          231455,"reject");
-    ASSERT_TEST(courseManagerResult==COURSE_MANAGER_STUDENT_NOT_LOGGED_IN);
+    ASSERT_TEST(courseManagerResult== COURSE_MANAGER_STUDENT_NOT_LOGGED_IN);
     courseManagerResult=courseManagerAddStudent(courseManager,1,"mahmoud",
                                                 "nas");
     ASSERT_TEST(courseManagerResult==COURSE_MANAGER_SUCCESS);
