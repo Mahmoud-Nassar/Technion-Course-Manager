@@ -23,6 +23,7 @@ struct student_t {
 };
 
 /**************************** static functions declaration ***************/
+
 static bool isSemesterExist(Student student, int semester_id);
 /**
  * assumes that all the parameters are not NULL

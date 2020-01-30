@@ -203,5 +203,4 @@ StudentResult studentFacultyRequest(Student student,
 									int course_id, char *request,FILE* output);
 
 
-
 #endif /* STUDENT_H_ */
