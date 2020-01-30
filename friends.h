@@ -1,9 +1,4 @@
-/*
- * Friends.h
- *
- *  Created on: Dec 19, 2017
- *      Author: Reham
- */
+
 
 #ifndef FRIENDS_H_
 #define FRIENDS_H_

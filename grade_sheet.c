@@ -1,9 +1,3 @@
-/*
- * gradeSheet.c
- *
- *  Created on: Dec 19, 2017
- *      Author: Reham
- */
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>

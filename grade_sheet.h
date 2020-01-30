@@ -1,9 +1,4 @@
-/*
- * GradeSheet.h
- *
- *  Created on: Dec 22, 2017
- *      Author: Reham
- */
+
 
 #ifndef GRADESHEET_H_
 #define GRADESHEET_H_
